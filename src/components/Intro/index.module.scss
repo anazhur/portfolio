@@ -1,0 +1,80 @@
+@import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@700&display=swap");
+
+.intro {
+  height: calc(100vh - 100px);
+  padding-top: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 60px;
+  padding: 40px; // фиксированные паддинги слева/справа
+
+  background-image: url("../../assets/background.png");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: var(--color-bg);
+
+  > span,
+  p {
+    font-size: clamp(18px, 2vw + 1rem, 32px); // адаптивный размер текста
+    text-align: center;
+    width: 85%;
+    color: var(--color-text);
+  }
+
+  h1 {
+    font-family: "Orbitron";
+    font-size: clamp(80px, calc((100vw - 80px) / 2), 140px); 
+    text-align: center;
+    color: var(--color-text);
+  }
+}
+
+/* Средние экраны */
+@media (max-width: 992px) {
+  .intro {
+    > span,
+    p {
+      font-size: clamp(20px, 2.5vw + 1rem, 28px);
+    }
+
+    h1 {
+      font-size: clamp(70px, 10vw, 100px);
+    }
+  }
+}
+
+/* Планшеты */
+@media (max-width: 768px) {
+  .intro {
+    height: auto;
+    padding-top: 80px;
+    padding-bottom: 40px;
+
+    > span,
+    p {
+      font-size: clamp(18px, 2.2vw + 1rem, 22px);
+      width: 90%;
+    }
+
+    h1 {
+      font-size: clamp(50px, 8vw, 70px);
+    }
+  }
+}
+
+/* Мобильные */
+@media (max-width: 480px) {
+  .intro {
+    > span,
+    p {
+      font-size: clamp(16px, 4vw, 18px);
+      width: 95%;
+    }
+
+    h1 {
+      font-size: clamp(40px, 10vw, 50px);
+    }
+  }
+}

@@ -1,0 +1,147 @@
+.card {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  border: 1px solid var(--color-accent);
+  border-radius: 12px;
+  width: 100%;
+  max-width: 1200px;
+  min-height: 300px;
+  overflow: hidden;
+  gap: 20px;
+  background-color: var(--color-bg);
+  color: var(--color-text);
+}
+
+.reverse {
+  flex-direction: row-reverse;
+}
+
+.imageBlock {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12px;
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 12px;
+  }
+}
+
+.contentBlock {
+  flex: 1;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 16px;   
+
+  h3 {
+    margin-top: 0;
+  }
+
+  p {
+    margin: 10px 0;
+  }
+
+  .links {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .btn {
+    display: inline-block;
+    padding: 8px 16px;
+    border-radius: 100px;
+    text-decoration: none;
+    transition: background-color 0.2s ease, transform 0.2s ease;
+  }
+
+  .github {
+    background-color: var(--color-bg);
+    color: var(--color-text);
+    border: 1px solid var(--color-accent);
+
+    &:hover {
+      background-color: var(--color-accent);
+    }
+  }
+
+  .demo {
+    background-color: var(--color-btn-bg);
+    color: var(--color-btn-text);
+    border: 1px solid transparent;
+
+    &:hover {
+      background-color: var(--hover-bg-color-btn); 
+    }
+  }
+}
+
+@media (max-width: 992px) {
+  .card {
+    gap: 16px;
+    min-height: 250px;
+  }
+
+  .imageBlock img {
+    height: auto;
+  }
+
+  .contentBlock {
+    padding: 16px;
+    gap: 12px;
+
+    h3 {
+      font-size: 1.2rem;
+    }
+
+    p {
+      font-size: 0.9rem;
+    }
+
+    .links {
+      gap: 8px;
+    }
+
+      .btn {
+    display: inline-block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 8px 16px;
+    width: 155px;
+    height: 50px;
+  }
+  }
+}
+
+@media (max-width: 768px) {
+  .card {
+    flex-direction: column;
+    min-height: auto;
+  }
+
+  .imageBlock, .contentBlock {
+    width: 90%;
+  }
+}
+
+@media (max-width: 480px) {
+  .imageBlock, .contentBlock {
+    width: 95%;
+  }
+
+  .contentBlock h3 {
+    font-size: 1rem;
+  }
+
+  .contentBlock p {
+    font-size: 0.85rem;
+  }
+
+}

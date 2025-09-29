@@ -1,0 +1,43 @@
+.switcher {
+  position: relative;
+  width: 60px;
+  height: 28px;
+  background-color: var(--color-accent);
+  border-radius: 100px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 4px;
+  box-sizing: border-box;
+  transition: background-color 0.3s;
+
+  .iconLeft,
+  .iconRight {
+    color: var(--color-text);
+    font-size: 20px;
+    z-index: 2;
+    line-height: 1;
+  }
+
+  .slider {
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    width: 24px;
+    height: 24px;
+    background-color: var(--color-bg);
+    border-radius: 50%;
+    transition: transform 0.3s ease, background-color 0.3s;
+    z-index: 1;
+  }
+
+  &.dark {
+    background-color: var(--color-accent);
+
+    .slider {
+      transform: translateX(32px);
+      background-color: var(--color-bg);
+    }
+  }
+}

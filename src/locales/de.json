@@ -1,0 +1,98 @@
+{
+  "sections": {
+    "about": "Über mich",
+    "skills": "Fähigkeiten",
+    "projects": "Projekte",
+    "timeline": "Zeitachse",
+    "contact": "Kontakt"
+  },
+
+    "intro": {
+    "greeting": "Hallo, ich bin Anastasia,",
+    "title": "FRONTEND-ENTWICKLERIN",
+    "description": "Ich liebe es, Ideen in interaktive Erlebnisse zu verwandeln und sauberen Code sowie Interfaces zu gestalten, die sich einfach richtig anfühlen."
+  },
+
+    "contact": {
+    "button": "Let's Talk"
+  },
+
+  "about": {
+    "title": "Über mich",
+    "paragraph1": "Hallo, ich bin Anastasia, eine Frontend-Entwicklerin mit Erfahrung in Business und Einzelhandel. Meine vorherige Erfahrung hat mir gezeigt, wie wichtig Usability und klare Kommunikation sind – etwas, das ich jetzt in die Erstellung digitaler Produkte einbringe.",
+    "paragraph2": {
+      "part1": "Ich habe ein Frontend-Entwicklungsprogramm abgeschlossen und an einem mehrseitigen Online-Shop-Projekt zusammen mit einem anderen Entwickler gearbeitet. Dadurch habe ich praktische Erfahrungen mit ",
+      "highlight": "React, Redux, JavaScript und CSS",
+      "part2": " gesammelt, mit Fokus auf sauberen, wiederverwendbaren Code und den Aufbau intuitiver Interfaces."
+    },
+    "paragraph3": "Ich genieße es, Interfaces zu gestalten, die flüssig und durchdacht wirken, und bin stets bestrebt, neue Tools und Ansätze zu lernen, um meine Arbeit zu verbessern.",
+    "portraitAlt": "Porträt"
+  },
+
+    "contacts": {
+    "github": "Zu GitHub",
+    "linkedin": "Zu LinkedIn",
+    "email": "E-Mail senden",
+    "downloadCV": "Lebenslauf herunterladen"
+  },
+
+  "skills": {
+    "title": "Die Fähigkeiten, Werkzeuge und Technologien, die ich verwende:"
+  },
+
+    "projects": {
+    "stack": "Technologien",
+    "github": "Auf GitHub ansehen",
+    "demo": "Live-Vorschau"
+  },
+
+  "timeline": {
+    "title": "Meine Erfahrung & Ausbildung",
+    "items": [
+      {
+        "year": "2018 – Sep 2020",
+        "title": "Retail Sales Manager",
+        "description": "Verantwortlich für Online-Verkäufe über die Firmenwebsite und Marktplätze. Viel über Kundenbedürfnisse und klare Kommunikation gelernt."
+      },
+      {
+        "year": "Sep 2020 – Nov 2022",
+        "title": "B2B Sales Manager",
+        "description": "Arbeitete mit Geschäftskunden, verwaltete Bestellungen und Verhandlungen, entwickelte organisatorische und problemlösende Fähigkeiten."
+      },
+      {
+        "year": "Nov 2022 – Mar 2024",
+        "title": "Umzug & Deutsch lernen",
+        "description": "Umzug nach Deutschland und Deutsch bis zum B2-Niveau gelernt, Disziplin und Anpassungsfähigkeit erworben."
+      },
+      {
+        "year": "Mar 2024 – Jan 2025",
+        "title": "Frontend-Entwicklungskurse",
+        "description": "Arbeitete an Projekten, die reale Szenarien simulieren, sammelte Erfahrungen mit React, Redux, JavaScript und CSS und lernte sauberen, wiederverwendbaren Code zu schreiben."
+      },
+      {
+        "year": "Now",
+        "title": "Suche nach einer Junior-Frontend-Stelle",
+        "description": "Verbessere aktiv meine Fähigkeiten und bin bereit, sie in realen Projekten anzuwenden."
+      }
+    ]
+  },
+
+  "form": {
+    "title": "Kontakt",
+    "name": "Name",
+    "email": "E-Mail",
+    "subject": "Betreff",
+    "message": "Nachricht",
+    "send": "Nachricht senden",
+    "sending": "Senden...",
+    "validation": {
+      "fillAll": "Bitte fülle alle Felder aus.",
+      "emailInvalid": "Bitte gib eine gültige E-Mail-Adresse ein."
+    },
+    "status": {
+      "success": "Nachricht gesendet – danke!",
+      "error": "Senden fehlgeschlagen. Bitte versuche es später erneut."
+    }
+  }
+}
+ 

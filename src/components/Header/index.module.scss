@@ -1,0 +1,125 @@
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--color-header);
+  padding: 16px 40px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+
+  nav ul {
+    list-style: none;
+    display: flex;
+    gap: 80px;
+    margin: 0;
+    padding: 0;
+
+    li button {
+      background: none;
+      border: 1px solid transparent;
+      cursor: pointer;
+      font-size: 1rem;
+      color: var(--color-text);
+      font-weight: 400;
+      transition: color 0.3s, font-weight 0.3s;
+
+      &:hover {
+        font-weight: 500;
+        color: var(--color-btn-bg);
+      }
+    }
+
+    li button.active {
+      font-weight: 600;
+    }
+  }
+
+  .switches {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    font-size: 0.9rem;
+    color: var(--color-text);
+
+    button {
+      font-family: inherit;
+      border: none;
+      cursor: pointer;
+      color: var(--color-text);
+      background-color: var(--color-header);
+    }
+  }
+
+  .burger {
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 24px;
+    height: 18px;
+    cursor: pointer;
+
+    span {
+      display: block;
+      height: 2px;
+      width: 100%;
+      background-color: var(--color-text);
+      border-radius: 1px;
+      transition: all 0.3s ease;
+    }
+  }
+
+  @media (max-width: 768px) {
+    nav {
+      position: fixed;
+      top: 0;
+      left: 0;
+      height: 100vh;
+      width: 200px;
+      background-color: var(--color-header);
+      flex-direction: column;
+      align-items: flex-start; // пункты выравниваются слева
+      justify-content: flex-start; // старт от верхнего края
+      padding: 80px 20px 20px 20px; // верхний и левый отступ
+      transform: translateX(-100%);
+      transition: transform 0.3s ease;
+
+      &.open {
+        transform: translateX(0);
+      }
+
+      ul {
+        flex-direction: column;
+        gap: 32px;
+        width: 100%; // чтобы кнопки растягивались
+      }
+
+      li button {
+        width: 100%; // растягиваем кнопки на всю ширину
+        text-align: left; // выравнивание текста слева
+        padding-left: 8px; // дополнительный отступ текста
+      }
+    }
+
+    .burger {
+      display: flex;
+      z-index: 1100;
+
+      &.active span:nth-child(1) {
+        transform: rotate(45deg) translate(5px, 5px);
+      }
+
+      &.active span:nth-child(2) {
+        opacity: 0;
+      }
+
+      &.active span:nth-child(3) {
+        transform: rotate(-45deg) translate(5px, -5px);
+      }
+    }
+  }
+}

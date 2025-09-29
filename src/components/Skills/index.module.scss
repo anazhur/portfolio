@@ -1,0 +1,111 @@
+.skills {
+  scroll-margin-top: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 60px 40px;
+  gap: 100px;
+  height: calc(100vh - 100px);
+  box-sizing: border-box;
+  background-color: var(--color-bg);
+  color: var(--color-text);
+
+  background-image: url("../../assets/background_sec3.png");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  h2 {
+    font-size: 2rem;
+    margin: 0;
+  }
+
+  .grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+    max-width: 1000px;
+    width: 100%;
+
+    > div {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 12px;
+      transition: transform 0.3s ease;
+
+      > img {
+        width: 90px;
+        height: 90px;
+        transition: transform 0.3s ease;
+      }
+
+      > span {
+        font-weight: 500;
+        color: var(--color-text);
+      }
+
+      &:hover > img {
+        transform: scale(1.15);
+      }
+    }
+  }
+}
+
+@media (max-width: 992px) {
+  .skills {
+    padding: 50px 30px;
+    gap: 80px;
+
+    h2 {
+      font-size: 1.8rem;
+    }
+
+    .grid {
+      gap: 24px;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .skills {
+    padding: 40px 20px;
+    height: auto;
+    gap: 60px;
+
+    .grid {
+      gap: 16px;
+
+      > div > img {
+        width: 70px;
+        height: 70px;
+      }
+
+      > div > span {
+        font-size: 0.9rem;
+      }
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  .skills {
+    padding: 30px 16px;
+    gap: 40px;
+
+    h2 {
+      font-size: 1.5rem;
+    }
+
+    .grid > div > img {
+      width: 60px;
+      height: 60px;
+    }
+
+    .grid > div > span {
+      font-size: 0.85rem;
+    }
+  }
+}

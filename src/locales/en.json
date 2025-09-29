@@ -1,0 +1,98 @@
+{
+  "sections": {
+    "about": "About",
+    "skills": "Skills",
+    "projects": "Projects",
+    "timeline": "Timeline",
+    "contact": "Contact"
+  },
+
+  "intro": {
+    "greeting": "Hi, I'm Anastasia,",
+    "title": "FRONTEND DEVELOPER",
+    "description": "I love turning ideas into interactive experiences and crafting clean code and interfaces that feel just right."
+  },
+
+  "contact": {
+    "button": "Let's Talk"
+  },
+
+  "about": {
+    "title": "About me",
+    "paragraph1": "Hi, I’m Anastasia, a frontend developer with a background in business and retail. My previous experience taught me how important usability and clear communication are – something I now bring into building digital products.",
+    "paragraph2": {
+      "part1": "I’ve completed a frontend development program and worked on a multi-page online store project together with another developer. Through this, I gained hands-on experience with ",
+      "highlight": "React, Redux, JavaScript, and CSS",
+      "part2": ", focusing on writing clean, reusable code and building intuitive interfaces."
+    },
+    "paragraph3": "I enjoy crafting interfaces that feel smooth and polished, and I’m always eager to learn new tools and approaches to improve my work.",
+    "portraitAlt": "portrait"
+  },
+
+  "contacts": {
+    "github": "Go to GitHub",
+    "linkedin": "Go to LinkedIn",
+    "email": "Send an email",
+    "downloadCV": "Download CV"
+    },
+
+    "skills": {
+    "title": "The skills, tools and technologies I use:"
+  },
+
+  "projects": {
+    "stack": "Stack",
+    "github": "Check on GitHub",
+    "demo": "Live preview"
+  },
+
+"timeline": {
+    "title": "My Experience & Education",
+    "items": [
+      {
+        "year": "2018 – Sep 2020",
+        "title": "Retail Sales Manager",
+        "description": "Handled online sales through the company website and marketplaces. Learned a lot about customer needs and clear communication."
+      },
+      {
+        "year": "Sep 2020 – Nov 2022",
+        "title": "B2B Sales Manager",
+        "description": "Worked with business clients, managed orders and negotiations, developed organizational and problem-solving skills."
+      },
+      {
+        "year": "Nov 2022 – Mar 2024",
+        "title": "Relocation & Language Learning",
+        "description": "Moved to Germany and studied German up to B2 level, gaining discipline and adaptability."
+      },
+      {
+        "year": "Mar 2024 – Jan 2025",
+        "title": "Frontend Development Courses",
+        "description": "Worked on projects designed to simulate real-world scenarios, building experience with React, Redux, JavaScript, and CSS, and learning to write clean, reusable code."
+      },
+      {
+        "year": "Now",
+        "title": "Looking for a Junior Frontend Role",
+        "description": "Actively improving my skills and ready to apply them on real projects."
+      }
+    ]
+  },
+
+  "form": {
+    "title": "Contact",
+    "name": "Name",
+    "email": "Email",
+    "subject": "Subject",
+    "message": "Message",
+    "send": "Send message",
+    "sending": "Sending...",
+    "validation": {
+      "fillAll": "Please fill all fields.",
+      "emailInvalid": "Please enter a valid email."
+    },
+    "status": {
+      "success": "Message sent — thank you!",
+      "error": "Failed to send. Try again later."
+    }
+  }
+}
+
