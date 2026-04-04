@@ -2,6 +2,7 @@ import React from "react";
 import s from "./index.module.scss";
 import ProjectCard from "../Project_card";
 import ProjectImage_1 from "../../assets/project_preview_1.jpg";
+import ProjectImage_2 from "../../assets/project_preview_2.jpg"
 
 const projects = [
   {
@@ -13,6 +14,16 @@ const projects = [
     stack: "React, Redux, CSS, JavaScript",
     github: "https://github.com/anazhur/Code_Crafters/tree/dev",
     demo: "https://code-crafters-jqpp.onrender.com/",
+  },
+    {
+    id: 2,
+    title: "Tic Tac Toe",
+    description:
+      "A modern implementation of the classic Tic Tac Toe game with a clean UI, smart computer opponent, and smooth user experience.",
+    image: ProjectImage_2,
+    stack: "React, CSS, JavaScript",
+    github: "https://github.com/anazhur/tic-tac-toe-react",
+    demo: "https://anazhur.github.io/tic-tac-toe-react/",
   },
 ];
 
