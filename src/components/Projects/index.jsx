@@ -2,7 +2,8 @@ import React from "react";
 import s from "./index.module.scss";
 import ProjectCard from "../Project_card";
 import ProjectImage_1 from "../../assets/project_preview_1.jpg";
-import ProjectImage_2 from "../../assets/project_preview_2.jpg"
+import ProjectImage_2 from "../../assets/project_preview_2.jpg";
+import ProjectImage_3 from "../../assets/project_preview_3.jpg"
 
 const projects = [
   {
@@ -24,6 +25,16 @@ const projects = [
     stack: "React, CSS, JavaScript",
     github: "https://github.com/anazhur/tic-tac-toe-react",
     demo: "https://anazhur.github.io/tic-tac-toe-react/",
+  },
+      {
+    id: 3,
+    title: "Dashboard UI",
+    description:
+      "A clean and minimal dashboard interface with customizable themes, combining productivity tools and ambient experience.",
+    image: ProjectImage_3,
+    stack: "React, SCSS, Context API",
+    github: "https://github.com/anazhur/dashboard-ui",
+    demo: "https://anazhur.github.io/dashboard-ui/",
   },
 ];
 

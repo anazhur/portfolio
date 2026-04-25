@@ -5,7 +5,7 @@
   align-items: center;
   gap: 40px;
   box-sizing: border-box;
-  height: calc(100vh - 100px);
+  min-height: calc(100vh - 100px);
   background-color: var(--color-bg);
   color: var(--color-text);
 
